@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 4px black solid;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .box:nth-child(n + 1):nth-child(-n + 8):nth-child(even),
+.container .box:nth-child(n + 17):nth-child(-n + 24):nth-child(even),
+.container .box:nth-child(n + 33):nth-child(-n + 40):nth-child(even),
+.container .box:nth-child(n + 49):nth-child(-n + 56):nth-child(even),
+.container .box:nth-child(n + 9):nth-child(-n + 16):nth-child(odd),
+.container .box:nth-child(n + 25):nth-child(-n + 32):nth-child(odd),
+.container .box:nth-child(n + 41):nth-child(-n + 48):nth-child(odd),
+.container .box:nth-child(n + 57):nth-child(-n + 64):nth-child(odd) {
+  background-color: black;
+}
+
+.box:nth-child(n + 1):nth-child(-n + 16){
+  color: burlywood;
+}
+
+.box:nth-child(n + 49){
+  color: burlywood ;
+}
